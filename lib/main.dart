@@ -1,3 +1,4 @@
+import 'package:custom_keyboard/components/keyboard_container.dart';
 import 'package:custom_keyboard/pages/page_1.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         ),
         home: const Page1(),
         builder: (context, child) {
-          return child!;
+          return KeyboardContainer(child: child);
         },
       ),
     );

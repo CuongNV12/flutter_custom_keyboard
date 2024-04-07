@@ -37,6 +37,7 @@ class _Page1State extends State<Page1> {
             const SizedBox(height: 16),
             const CustomTextField(
               hintText: 'custom 1',
+              isUseCustomKeyBoard: true,
             ),
             const SizedBox(height: 16),
             const CustomTextField(
@@ -45,6 +46,7 @@ class _Page1State extends State<Page1> {
             const SizedBox(height: 16),
             const CustomTextField(
               hintText: 'custom 2',
+              isUseCustomKeyBoard: true,
             ),
             const SizedBox(height: 16),
             const CustomTextField(
@@ -53,6 +55,7 @@ class _Page1State extends State<Page1> {
             const SizedBox(height: 16),
             const CustomTextField(
               hintText: 'custom 3',
+              isUseCustomKeyBoard: true,
             ),
             const SizedBox(height: 16),
             const CustomTextField(
@@ -61,6 +64,7 @@ class _Page1State extends State<Page1> {
             const SizedBox(height: 16),
             const CustomTextField(
               hintText: 'custom 4',
+              isUseCustomKeyBoard: true,
             ),
             const SizedBox(height: 16),
             const CustomTextField(
@@ -69,6 +73,7 @@ class _Page1State extends State<Page1> {
             const SizedBox(height: 16),
             const CustomTextField(
               hintText: 'custom 5',
+              isUseCustomKeyBoard: true,
             ),
             const SizedBox(height: 16),
             const CustomTextField(
@@ -77,6 +82,7 @@ class _Page1State extends State<Page1> {
             const SizedBox(height: 16),
             const CustomTextField(
               hintText: 'custom 6',
+              isUseCustomKeyBoard: true,
             ),
           ],
         ),

@@ -26,6 +26,7 @@ class _Page2State extends State<Page2> {
             SizedBox(height: 16),
             CustomTextField(
               hintText: 'custom 1',
+              isUseCustomKeyBoard: true,
             ),
             SizedBox(height: 16),
             CustomTextField(
@@ -34,6 +35,7 @@ class _Page2State extends State<Page2> {
             SizedBox(height: 16),
             CustomTextField(
               hintText: 'custom 2',
+              isUseCustomKeyBoard: true,
             ),
             SizedBox(height: 16),
             CustomTextField(
@@ -42,6 +44,7 @@ class _Page2State extends State<Page2> {
             SizedBox(height: 16),
             CustomTextField(
               hintText: 'custom 3',
+              isUseCustomKeyBoard: true,
             ),
             SizedBox(height: 16),
             CustomTextField(
@@ -50,6 +53,7 @@ class _Page2State extends State<Page2> {
             SizedBox(height: 16),
             CustomTextField(
               hintText: 'custom 4',
+              isUseCustomKeyBoard: true,
             ),
             SizedBox(height: 16),
             CustomTextField(
@@ -58,6 +62,7 @@ class _Page2State extends State<Page2> {
             SizedBox(height: 16),
             CustomTextField(
               hintText: 'custom 5',
+              isUseCustomKeyBoard: true,
             ),
             SizedBox(height: 16),
             CustomTextField(
@@ -66,6 +71,7 @@ class _Page2State extends State<Page2> {
             SizedBox(height: 16),
             CustomTextField(
               hintText: 'custom 6',
+              isUseCustomKeyBoard: true,
             ),
           ],
         ),

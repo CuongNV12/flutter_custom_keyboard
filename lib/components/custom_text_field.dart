@@ -1,15 +1,18 @@
+import 'package:custom_keyboard/components/custom_keyboard_handler.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatefulWidget {
   final TextEditingController? controller;
   final FocusNode? focusNode;
   final TextInputType? inputType;
+  final bool isUseCustomKeyBoard;
   final String? hintText;
 
   const CustomTextField({
     this.controller,
     this.focusNode,
     this.inputType,
+    this.isUseCustomKeyBoard = false,
     this.hintText,
     super.key,
   });
@@ -26,7 +29,21 @@ class _CustomTextFieldState extends State<CustomTextField> {
   void initState() {
     _controller = widget.controller ?? TextEditingController();
     _focusNode = widget.focusNode ?? FocusNode();
+    _handleCustomKeyboard();
     super.initState();
+  }
+
+  void _handleCustomKeyboard() {
+    if (widget.isUseCustomKeyBoard) {
+      _focusNode.addListener(() {
+        CustomKeyboardHandler.onFocusChangeHandler(
+          CustomKeyboardHandlerData(
+            isKeyboardShowing: _focusNode.hasFocus,
+            controller: _controller,
+          ),
+        );
+      });
+    }
   }
 
   @override
@@ -41,7 +58,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
     return TextFormField(
       controller: _controller,
       focusNode: _focusNode,
-      keyboardType: widget.inputType,
+      keyboardType:
+          widget.isUseCustomKeyBoard ? TextInputType.none : widget.inputType,
       decoration: InputDecoration(
         hintText: widget.hintText,
         labelText: widget.hintText,
